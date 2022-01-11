@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+
+/* variables */
+:root {
+    --blue: #2b4172;
+    --white: #ffffff;
+    --gray: #8d95a6;
+    --light-blue: #ADD8E6;
+    --poppins: 'Poppins', sans-serif;
+}
+
+/* formatting for the whole body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+.navbarWrapper {
+    background: var(--blue);
+}
+
+.navbarInner {
+    display: flex;
+    padding: 20px 55px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.navbarLogoImage {
+    vertical-align: middle;
+    height: 25px;
+    width: 25px;
+}
+
+.navbarLogoText {
+    color: var(--white);
+    font-size: 20px;
+    text-decoration: none;
+    font-family: poppins;
+    position: relative;
+    vertical-align: middle;
+}
+
+.navbarLinkGroup {
+    display: flex;
+    column-gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarLink {
+    color: var(--white);
+    font-size: 13px;
+    text-decoration: none;
+    font-family: poppins;
+}
+
+.navbarLink:hover {
+    color: var(--light-blue);
+    transition-delay: .05s;
+    text-decoration: underline;
+}
+
+.navbarContact {
+    align-items: center;
+    color: var(--blue);
+    padding: 3px 15px;
+    border-radius: 16px;
+    border:2px solid var(--white);
+    background-color: var(--white);
+    font-size: 13px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: poppins;
+}
+
+.navbarContact:hover {
+    background-color: var(--blue);
+    color: var(--white);
+    transition-delay: .10s;
+}
+
+
+/* main block */
+.mainWrapper {
+    background-color: var(--blue);
+    padding: 45px 100px;
+}
+
+.mainRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.mainTextColumn {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    padding-right: 60px;
+    padding-bottom: 100px;
+    flex: 1;
+}
+
+.mainTitle {
+    color: var(--white);
+    font-size: 52px;
+    line-height: 75px;
+    font-family: poppins;
+    margin-bottom: 10px;
+}
+
+.mainTagline {
+    color: var(--light-blue);
+    font-size: 20px;
+    font-family: poppins;
+    margin-bottom: 45px;
+}
+
+.mainContact {
+    color: var(--blue);
+    padding: 9px 17px;
+    border-radius: 15px;
+    border: 2px solid var(--white);
+    background-color: var(--white);
+    font-size: 14px;
+    text-decoration: none;
+    font-family: poppins;
+    transition: all 0.5s;
+}
+
+.mainContact span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.mainContact span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.mainContact:hover span {
+    padding-right: 20px;
+}
+  
+.mainContact:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+.mainImageColumn {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    align-items: center;
+    padding-bottom: 100px;
+    flex: 1;
+}
+
+.mainImage {
+    height: 400px;
+    width: 711px;
+    align-items: center;
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+    box-shadow: 7px 7px var(--gray);
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+  
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+  
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+  
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+  
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+
+/* overview block */
+.overviewWrapper {
+    background-color: var(--white);
+    padding: 80px 100px;
+    align-items: center;
+    background-image: url("../images/fun-background.png");
+    background-size: 300px 300px;
+}
+
+.overviewText {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.overviewTitle {
+    color: var(--blue);
+    font-size: 40px;
+    font-family: poppins;
+}
+
+.overviewCopy {
+    color: var(--gray);
+    font-size: 23px;
+    font-family: poppins;
+}
+
+.overviewSubText {
+    color: var(--blue);
+    font-size: 19px;
+    font-family: poppins;
+    font-weight: bold;
+}
+
+.overviewHighlightRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.overviewHighlightPanel {
+    width: 25%;
+    word-wrap: normal;
+    align-items: center;
+    text-align: center;
+    margin: 20px 30px;
+}
+
+.overviewHighlightHeader {
+    color: var(--blue);
+    font-size: 21px;
+    font-family: poppins;
+}
+
+.overviewHighlightText {
+    color: var(--gray);
+    font-size: 17px;
+    font-family: poppins;
+}
+
+.overviewHighlightImg {
+    height: 80px;
+    width: 80px;
+}
+
+
+/* features block */
+.featuresWrapper {
+    background-color: var(--blue);
+    padding: 50px 80px;
+}
+
+.featuresBlock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.featuresBlockFlipped {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.featuresTextColumn {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    padding-right: 60px;
+    text-align: left;
+    flex: 1;
+}
+
+.featuresTextColumnFlipped {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    text-align: right;
+    flex: 1;
+}
+
+.featuresTitle {
+    color: var(--white);
+    font-size: 35px;
+    font-family: poppins;
+    margin-bottom: 0px;
+}
+
+.featuresTagline {
+    color: var(--light-blue);
+    font-size: 25px;
+    font-family: poppins;
+}
+
+.featuresSubText {
+    color: var(--light-blue);
+    font-size: 15px;
+    font-family: poppins;
+    max-width: 80%;
+}
+
+.featuresSubTextFlipped {
+    color: var(--light-blue);
+    font-size: 15px;
+    font-family: poppins;
+    max-width: 80%;
+    margin-left: auto; 
+    margin-right: 0;
+}
+
+.featuresImageColumn {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    align-items: center;
+}
+
+.featuresImageColumnFlipped {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.featuresImageOne {
+    height: 375px;
+    width: 666px;
+}
+
+.featuresImageTwo {
+    height: 375px;
+    width: 666px;
+}
+
+.featuresImageThree {
+    height: 375px;
+    width: 666px;
+}
+
+
+/* action block */
+.actionWrapper {
+    background-color: var(--white);
+    padding: 80px 100px;
+    align-items: center;
+    background-image: url("../images/fun-background.png");
+    background-size: 300px 300px;
+}
+
+.actionBlock {
+    margin: auto;
+    background-color: var(--blue);
+    width: 50%;
+    padding: 0px 30px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    border-radius: 12px;
+}
+
+.actionText {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.actionTitle {
+    color: var(--white);
+    font-size: 32px;
+    font-family: poppins;
+    margin-bottom: 50px;
+}
+
+.actionContact {
+    color: var(--blue);
+    background-color: var(--white);
+    padding: 9px 17px;
+    border-radius: 15px;
+    border: 2px solid var(--white);
+    font-size: 15px;
+    text-decoration: none;
+    font-family: poppins;
+    transition: all 0.5s;
+}
+
+.actionContact span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.actionContact span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.actionContact:hover span {
+    padding-right: 20px;
+}
+  
+.actionContact:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* footer */
+.footerWrapper {
+    padding: 30px;
+    background-color: var(--blue);
+}
+
+.footerLogoImage {
+    vertical-align: middle;
+    height: 25px;
+    width: 25px;
+}
+
+.footerLogoText {
+    color: var(--white);
+    font-size: 20px;
+    text-decoration: none;
+    font-family: poppins;
+    position: relative;
+    vertical-align: middle;
+}
