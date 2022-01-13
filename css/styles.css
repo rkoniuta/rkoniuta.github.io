@@ -107,8 +107,8 @@ body {
 
 .mainTitle {
     color: var(--white);
-    font-size: 52px;
-    line-height: 75px;
+    font-size: 45px;
+    line-height: 60px;
     font-family: poppins;
     margin-bottom: 10px;
 }
@@ -118,6 +118,7 @@ body {
     font-size: 20px;
     font-family: poppins;
     margin-bottom: 45px;
+    width: 80%;
 }
 
 .mainContact {
@@ -157,7 +158,6 @@ body {
     right: 0;
 }
 
-
 .mainImageColumn {
     display: flex;
     flex-direction: column;
@@ -168,8 +168,8 @@ body {
 }
 
 .mainImage {
-    height: 400px;
-    width: 711px;
+    height: 375px;
+    width: 666px;
     align-items: center;
     animation: fadeIn 2s;
     -webkit-animation: fadeIn 2s;
@@ -234,7 +234,7 @@ body {
 
 .overviewSubText {
     color: var(--blue);
-    font-size: 19px;
+    font-size: 26px;
     font-family: poppins;
     font-weight: bold;
 }
