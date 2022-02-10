@@ -222,13 +222,13 @@ body {
 
 .overviewTitle {
     color: var(--blue);
-    font-size: 40px;
+    font-size: 44px;
     font-family: poppins;
 }
 
 .overviewCopy {
     color: var(--gray);
-    font-size: 23px;
+    font-size: 24px;
     font-family: poppins;
 }
 
